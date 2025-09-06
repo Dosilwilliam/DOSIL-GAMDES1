@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b70c2kie7bhsk"]
+
+[ext_resource type="Texture2D" uid="uid://c8fae00i4o10l" path="res://graphics/craftpix-net-396765-free-simple-platformer-game-kit-pixel-art/4 Enemies/2/Fall.png" id="1_45pq5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
+radius = 48.0
+height = 194.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1056, 502)
+scale = Vector2(4.82292, 5.375)
+texture = ExtResource("1_45pq5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1053, 549)
+shape = SubResource("CapsuleShape2D_lquwl")
